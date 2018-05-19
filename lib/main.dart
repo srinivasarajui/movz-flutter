@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import './ui/content_list.dart';
+import './data_model.dart';
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -28,15 +31,11 @@ class HomePage extends StatelessWidget {
         title: new Text(this.title),
       ),
       body: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Text(
-              'We Just got started',
-            ),
-          ],
-        ),
-      ),
+        child:
+            ContentListWidget([new ContentItem("TEST1","TEST2"),
+            new ContentItem("TEST2","TEST4")]),
+      )
+
     );
   }
 }
