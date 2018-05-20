@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../data_model.dart';
 
-class ContentItemWidget extends StatelessWidget {
-  final ContentItem _item;
-  ContentItemWidget(this._item);
+class SearchBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -13,8 +10,8 @@ class ContentItemWidget extends StatelessWidget {
         children: <Widget>[
           ListTile(
             leading: Icon(Icons.wallpaper),
-            title: Text(_item.name),
-            subtitle: Text(_item.desc),
+            title: Text(''),
+            subtitle: Text(''),
           ),
         ],
       ),
