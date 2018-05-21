@@ -9,10 +9,12 @@ class ContentItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Column(
-        mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           ListTile(
-            leading: Icon(Icons.wallpaper),
+            leading: new Image.network(
+              "https://ia.media-imdb.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_QL50_SY1000_CR0,0,675,1000_AL_.jpg",
+              width: 120.0,
+            ),
             title: Text(_item.name),
             subtitle: Text(_item.desc),
           ),
